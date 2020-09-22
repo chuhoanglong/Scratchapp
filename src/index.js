@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
 app.use(bodyParser.json());
-app.listen(8080, () => {
-  console.log("start server port 8080");
+app.listen(process.env.PORT || 8080, () => {
+  console.log("start server port ", process.env.PORT || 8080);
 });
 
 // API of products
