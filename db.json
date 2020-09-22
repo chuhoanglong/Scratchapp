@@ -1,0 +1,424 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Yeezy350Sesame ",
+      "price": "224",
+      "color": "Tripple_White",
+      "size": 36,
+      "category": "adidas",
+      "url": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    },
+    {
+      "id": "2",
+      "name": "Proshares ",
+      "price": "247",
+      "color": "Tripple_White",
+      "size": 36,
+      "category": "adidas",
+      "url": "https://cdn.shopify.com/s/files/1/1117/1018/products/v2stat_800x.png?v=1557231982",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    },
+    {
+      "id": "3",
+      "name": "Proshares ",
+      "price": "275",
+      "color": "Tripple_White",
+      "size": 36,
+      "category": "adidas",
+      "url": "https://ns.imgix.net/product/1563205886114_adidasYeezyBoost350V2Clay0.png",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    },
+    {
+      "id": "4",
+      "name": "YEEZY 350V2 ",
+      "price": "139",
+      "color": "Tripple_White",
+      "size": 36,
+      "category": "adidas",
+      "url": "http://www.hopkicks.pk/image/cache/IMRAN/Yeezy%20v2/cream%20white%20v2%20batch%202/images-800x800.jpg",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    },
+    {
+      "id": "5",
+      "name": "NASDAQ-100",
+      "price": "123",
+      "color": "Tripple_White",
+      "size": 36,
+      "category": "NIKE",
+      "url": "https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1550180948&w=1000",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    },
+    {
+      "id": "6",
+      "name": "Jordan_1 BLR",
+      "price": "245",
+      "color": "Black_White_Red",
+      "size": 36,
+      "category": "NIKE",
+      "url": "https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/jwosybvzxnrzfdlxh2a4/air-jordan-1-retro-high-og-shoe-h1sM48.jpg",
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "nameShop": "Shop Giày NIKE"
+    },
+    {
+      "id": "7",
+      "name": "Jordan_1 BL",
+      "price": "254",
+      "color": "Black_White",
+      "size": "36",
+      "category": "NIKE",
+      "url": "https://shopgiayreplica.com/wp-content/uploads/2019/02/nike-air-jordan-1-retro-high-black-white-replica.jpg",
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "nameShop": "Shop Giày NIKE"
+    },
+    {
+      "id": "8",
+      "name": "Air Max 90",
+      "price": "132",
+      "color": "White",
+      "size": 36,
+      "category": "NIKE",
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "nameShop": "Shop Giày NIKE",
+      "url": "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/k5ltifzphxft7lwqxnlu/air-max-90-leather-gen%C3%A7-ayakkab%C4%B1s%C4%B1-yATYkJKy.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Air Max 97",
+      "price": "116",
+      "color": "White",
+      "size": 36,
+      "category": "NIKE",
+      "url": "https://cdn.shopify.com/s/files/1/0013/3074/1303/products/Nike_Air_Max_97_White_Orange.jpg?v=1548685703",
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "nameShop": "Shop Giày NIKE"
+    },
+    {
+      "id": "10",
+      "name": "Air Force 1",
+      "price": "109",
+      "color": "Tripple_White",
+      "size": 36,
+      "category": "NIKE",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzV-P-s9gimx11ik83Ydm6w5NHmvnTmkHtweaVvKxOcOUfETEN",
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "nameShop": "Shop Giày NIKE"
+    },
+    {
+      "id": "11",
+      "name": "Air Force",
+      "price": "109",
+      "color": "White",
+      "size": 36,
+      "category": "NIKE",
+      "url": "http://atasport.vn/wp-content/uploads/2019/06/4139_1389-450x450.jpg",
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "nameShop": "Shop Giày NIKE"
+    },
+    {
+      "id": "12",
+      "name": "Nike Air Mag",
+      "price": "199",
+      "color": "White",
+      "size": 36,
+      "category": "NIKE",
+      "url": "https://cdn.shopify.com/s/files/1/1592/8069/products/IMG_9477-1_22764cb7-ae7e-40e0-b422-85f6e29afbdd_1024x1024.jpg?v=1552093838",
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "nameShop": "Shop Giày NIKE"
+    },
+    {
+      "id": "13",
+      "name": "Prophere Solar",
+      "price": "149",
+      "color": "Red",
+      "size": 36,
+      "category": "adidas",
+      "url": "https://fastsole.co.uk/wp-content/uploads/2017/12/adidas-Prophere-Grey-White-CQ3023-Buy-New-Sneakers-Trainers-FOR-Man-Women-in-United-Kingdom-UK-Europe-EU-Germany-DE-05.jpg",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    },
+    {
+      "id": "14",
+      "name": "Guayos Predator 18+",
+      "price": "109",
+      "color": "Pink",
+      "size": 36,
+      "category": "adidas",
+      "url": "https://assets.adidas.com/images/w_600,f_auto,q_auto/1fd51bfadb7a40a68b68a92f007be654_9366/Guayos_Predator_Tango_18+_Cesped_Artificial_Naranja_DB2059_01_standard.jpg",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    },
+    {
+      "id": "15",
+      "name": "Yeezy 350 V2",
+      "price": "159",
+      "color": "Frozen Yellow",
+      "size": 36,
+      "category": "adidas",
+      "url": "https://cdn.shopify.com/s/files/1/0007/2889/1450/products/802388_01_a7c582f3-2b53-45f7-ad8f-f1e4af6b06c6_300x300.jpg?v=1561490603",
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "nameShop": "adidas_44_hàng bài"
+    }
+  ],
+  "users": [
+    {
+      "uid": "WRsjHeKnJOTFcQd0HCAZ2xhZEOQ2",
+      "name": "@TK_TEST",
+      "email": "test@gmail.com",
+      "address": "141 chien thang",
+      "phone": "0988888888",
+      "roles": "user",
+      "avatar": "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "name": "long hoang",
+      "email": "longhoang@gmail.com",
+      "phone": "0339643579",
+      "roles": "admin",
+      "address": "141 chien thang",
+      "avatar": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg"
+    },
+    {
+      "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "name": "Nguyễm Thùy Linh",
+      "email": "nguyenthuylinh@gmail.com",
+      "phone": "0339643588",
+      "roles": "admin",
+      "address": "141 chien thang",
+      "avatar": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg"
+    }
+  ],
+  "customers": [
+    {
+      "uid": "WRsjHeKnJOTFcQd0HCAZ2xhZEOQ2",
+      "id": "bvcncnbvn",
+      "name": "@TK_TEST",
+      "address": {
+        "country": "VN",
+        "state": "Thanh xuân",
+        "city": "Hà nội",
+        "street": "141 chiến thắng"
+      },
+      "idShop": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "email": "test@gmail.com",
+      "isVerifying": 1,
+      "cancelOrder": false,
+      "phone": "0339643579",
+      "avatarUrl": "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "createdAt": "2019-10-09T18:48:26.440Z",
+      "carts": [
+        {
+          "id": "4",
+          "name": "YEEZY 350V2 ",
+          "price": "139",
+          "color": "Tripple_White",
+          "size": 36,
+          "category": "adidas",
+          "url": "http://www.hopkicks.pk/image/cache/IMRAN/Yeezy%20v2/cream%20white%20v2%20batch%202/images-800x800.jpg",
+          "key": "2019-10-09T18:47:34.401Z"
+        }
+      ]
+    },
+    {
+      "id": "LfCnOeGv",
+      "name": "Linh nguyễn",
+      "address": {
+        "country": "VN",
+        "state": "Thanh xuân",
+        "city": "Hà Nội",
+        "street": "165 nguyễn trãi"
+      },
+      "isVerifying": 1,
+      "cancelOrder": false,
+      "email": "linhnguyen@gmail.com",
+      "idShop": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "phone": "09888888888",
+      "avatarUrl": "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "createdAt": "2019-10-09T18:55:04.987Z",
+      "carts": [
+        {
+          "id": "4",
+          "name": "YEEZY 350V2 ",
+          "price": "139",
+          "color": "Tripple_White",
+          "size": 36,
+          "category": "adidas",
+          "url": "http://www.hopkicks.pk/image/cache/IMRAN/Yeezy%20v2/cream%20white%20v2%20batch%202/images-800x800.jpg",
+          "key": "2019-10-09T18:47:34.401Z"
+        }
+      ]
+    },
+    {
+      "id": "Y55Yi2uw",
+      "name": "Chu hoàng long",
+      "address": {
+        "country": "VN",
+        "state": "Thanh xuân",
+        "city": "Hà Nội",
+        "street": "243 nguyễn trãi"
+      },
+      "isVerifying": 1,
+      "cancelOrder": false,
+      "email": "longanh143@gmail.com",
+      "idShop": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "phone": "0135368468",
+      "avatarUrl": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg",
+      "createdAt": "2019-10-09T19:10:57.631Z",
+      "carts": [
+        {
+          "id": "4",
+          "name": "YEEZY 350V2 ",
+          "price": "139",
+          "color": "Tripple_White",
+          "size": 36,
+          "category": "adidas",
+          "url": "http://www.hopkicks.pk/image/cache/IMRAN/Yeezy%20v2/cream%20white%20v2%20batch%202/images-800x800.jpg",
+          "key": "2019-10-09T19:09:23.833Z"
+        }
+      ]
+    },
+    {
+      "id": "hDNPNQRW",
+      "name": "Longchuhoang",
+      "address": {
+        "country": "VN",
+        "state": "Thanh trì",
+        "city": "Hà Nội",
+        "street": "141 chiến thắng"
+      },
+      "isVerifying": 1,
+      "cancelOrder": false,
+      "email": "longanh143@gmail.com",
+      "idShop": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "phone": "013747757855",
+      "avatarUrl": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg",
+      "createdAt": "2019-10-09T19:35:15.413Z",
+      "carts": [
+        {
+          "id": "1",
+          "name": "Yeezy350Sesame ",
+          "price": "224",
+          "color": "Tripple_White",
+          "size": 36,
+          "category": "adidas",
+          "url": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg",
+          "key": "2019-10-09T19:33:40.059Z"
+        }
+      ]
+    },
+    {
+      "id": "kJx_DmBb",
+      "name": "Long",
+      "address": {
+        "country": "VN",
+        "state": "Thanh xuân",
+        "city": "HN",
+        "street": "141 chiến thắng"
+      },
+      "isVerifying": 1,
+      "cancelOrder": false,
+      "email": "longhoang@gmail.com",
+      "phone": "1134",
+      "avatarUrl": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg",
+      "createdAt": "2020-01-03T15:56:39.728Z",
+      "idShop": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "carts": [
+        {
+          "id": "1",
+          "name": "Yeezy350Sesame ",
+          "price": "224",
+          "color": "Tripple_White",
+          "size": 36,
+          "category": "adidas",
+          "url": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg",
+          "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+          "nameShop": "adidas_44_hàng bài",
+          "key": "2020-01-03T15:49:23.098Z"
+        }
+      ]
+    },
+    {
+      "id": "KZdNnYeD",
+      "uid": "WRsjHeKnJOTFcQd0HCAZ2xhZEOQ2",
+      "name": "Sadasdas",
+      "address": {
+        "country": "VN",
+        "state": "Sadasdas",
+        "city": "Sad sad",
+        "street": ""
+      },
+      "idShop": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+      "isVerifying": 2,
+      "note": "Asdasdas",
+      "amount": "",
+      "phone": "Sadasdas a",
+      "createdAt": "2020-01-09T14:37:39.800Z",
+      "carts": [
+        {
+          "id": "6",
+          "name": "Jordan_1 BLR",
+          "price": "245",
+          "color": "Black_White_Red",
+          "size": 36,
+          "category": "NIKE",
+          "url": "https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/jwosybvzxnrzfdlxh2a4/air-jordan-1-retro-high-og-shoe-h1sM48.jpg",
+          "uid": "rHHw4zrweJcVUCyoLOm7DMmYeNJ3",
+          "nameShop": "Shop Giày NIKE",
+          "key": "2020-01-09T14:37:21.059Z"
+        }
+      ]
+    },
+    {
+      "id": "jLuDTeHU",
+      "uid": "WRsjHeKnJOTFcQd0HCAZ2xhZEOQ2",
+      "name": "Eee",
+      "address": {
+        "country": "VN",
+        "state": "Ê",
+        "city": "Ê",
+        "street": "2edd"
+      },
+      "idShop": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+      "isVerifying": 2,
+      "email": "test@gmail.com",
+      "note": "222",
+      "amount": "22",
+      "phone": "3333",
+      "avatarUrl": "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "createdAt": "2020-01-11T01:28:29.519Z",
+      "carts": [
+        {
+          "id": "1",
+          "name": "Yeezy350Sesame ",
+          "price": "224",
+          "color": "Tripple_White",
+          "category": "adidas",
+          "url": "https://www.youbetterfly.com/image/cache/catalog/November%20sneakers/Adidas%20Yeezy%20Boost%20350%20Sesame-500x500.jpg",
+          "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+          "nameShop": "adidas_44_hàng bài",
+          "key": "2020-01-11T01:00:51.532Z",
+          "size": "36"
+        },
+        {
+          "id": "5",
+          "name": "NASDAQ-100",
+          "price": "123",
+          "color": "Tripple_White",
+          "size": 36,
+          "category": "NIKE",
+          "url": "https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Travis-Scott/Images/Air-Jordan-1-Retro-High-Travis-Scott/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1550180948&w=1000",
+          "uid": "3DF4fzyKKoXLgFFeNIVUfG9Dg7F3",
+          "nameShop": "adidas_44_hàng bài",
+          "key": "2020-01-11T01:27:27.041Z"
+        }
+      ]
+    }
+  ]
+}
