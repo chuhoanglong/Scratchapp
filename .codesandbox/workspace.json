@@ -4,6 +4,14 @@
       "views": [
         {
           "id": "codesandbox.browser"
+        },
+        {
+          "id": "codesandbox.browser",
+          "options": {
+            "port": 8080,
+            "url": "https://zc9f4-8080.sse.codesandbox.io"
+          },
+          "closeable": true
         }
       ]
     },
