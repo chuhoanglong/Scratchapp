@@ -19,16 +19,14 @@
       "pId": "lgWXWQZb2tNRjYSU3tJYRpn0HvB3"
     }
   ],
-  "follow": {
-    "lgWXWQZb2tNRjYSU3tJYRpn0HvB3": {
-      "LY2NityuSvffFcojII8VdNeoLmL2": {
-        "address": "Hà Nội",
-        "avatar": "https://firebasestorage.googleapis.com/v0/b/scratchapplication-7d052.appspot.com/o/avatar%2F1599142853880.jpg?alt=media&token=3b46fa33-f8eb-4925-8ee4-5ecd893669af",
-        "likes": 0,
-        "userName": "Đinh Thị Mạnh"
-      }
+  "follow": [
+    {
+      "address": "Hà Nội",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/scratchapplication-7d052.appspot.com/o/avatar%2F1599142853880.jpg?alt=media&token=3b46fa33-f8eb-4925-8ee4-5ecd893669af",
+      "likes": 0,
+      "userName": "Đinh Thị Mạnh"
     }
-  },
+  ],
   "recipes": [
     {
       "description": "Súp bắp gà là món ăn bổ dưỡng, thích hợp cho những ngày mưa gió",

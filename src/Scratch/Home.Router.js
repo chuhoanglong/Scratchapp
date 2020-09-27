@@ -3,40 +3,48 @@ const router = express.Router();
 const db = require("./db.js");
 const shortid = require("shortid");
 
+var Home = require('./SchemaDB/home.model');
+var Comment = require('./SchemaDB/comment.model');
+var User = require('./SchemaDB/user.model');
+
 //https://dmkjo.sse.codesandbox.io/products?category=adidas
 //API lay tat ca cac mon an .
-router.get("/home/recipes", (req, res) => {
+router.get("/home/recipes", async (req, res) => {
   const { page } = req.query;
-  if (page >= 0) {
-    console.log(page);
-    let arrPage = db.get("recipes").filter({}).value();
+  const response = await Home.find({});
+  if (page >= 0 && response.length > 0) {
     const indexStart = page * 5;
     const indexEnd = indexStart + 5;
-    arrPage = arrPage.reverse().splice(indexStart, indexEnd);
+    const arrPage = response.reverse().splice(indexStart, indexEnd);
     res.json({
       status: 200,
       data: arrPage
     });
+    // let arrPage = db.get("recipes").filter({}).value();
   } else {
-    let arrAll = db.get("recipes").filter({}).value();
-    arrAll = arrAll.reverse();
-    res.json(arrAll);
+    const arrAll = response.reverse();
+    res.json({
+      status: 200,
+      data: arrAll
+    });
   }
 });
 
 // API lay chi tiet 1 mon an.
-router.post("/home/recipes/detail", (req, res) => {
-  const { pId } = req.body;
-  if (pId) {
-    const dataDetail = db.get("recipes").find({ pId }).value();
-    console.log(dataDetail);
-    const dataComment = db.get("comments").filter({ pId }).value();
-    if (dataDetail) {
-      dataDetail.comment = dataComment.length;
-      dataDetail.dataComment = dataComment;
+router.post("/home/recipes/detail", async (req, res) => {
+  const { rId } = req.body;
+  if (rId) {
+    const response = await Home.find({ rId });
+    const dataComment = await Comment.find({ rId });
+    if (response) {
+      const data = {
+        ...response,
+        comment: dataComment.length,
+        dataComment: dataComment
+      }
       res.json({
         status: 200,
-        data: dataDetail
+        data
       });
       return;
     }
@@ -67,7 +75,8 @@ router.post("/home/recipes", (req, res) => {
     name,
     profileAvatar,
     profileName,
-    urlCover
+    urlCover,
+    uId
   } = req.body;
   if (!description) {
     res.statusCode = 406;
@@ -85,71 +94,124 @@ router.post("/home/recipes", (req, res) => {
     });
     return;
   }
-  db.get("recipes")
-    .push({
-      pId: shortid.generate(),
-      description,
-      directions,
-      ingredients,
-      name,
-      profileAvatar,
-      profileName,
-      urlCover
-    })
-    .write();
-  res.json({
-    status: 200,
-    message: "Thêm món ăn thành công!"
+
+  const data = {
+    rId: shortid.generate(),
+    description,
+    directions,
+    ingredients,
+    name,
+    profileAvatar,
+    profileName,
+    urlCover,
+    uId,
+    like: 0
+  }
+
+  var home = new Home(data);
+  home.save(err => {
+    if (err) {
+      res.json({
+        status: 200,
+        message: err
+      });
+      return;
+    }
+    res.json({
+      status: 200,
+      message: "Thêm món ăn thành công!"
+    });
   });
 });
 
 //api thêm bình luận
-router.post("/home/recipes/comment", (req, res) => {
-  const { pId, comment, userId } = req.body;
-  const userComment = db.get("users").find({ userId }).value();
-  const { avatar, userName } = userComment;
-  const value = db
-    .get("comments")
-    .push({
-      avatar,
-      comment,
-      name: userName,
-      pId,
-      cmtId: shortid.generate()
-    })
-    .write();
-
-  const dataComment = db.get("comments").filter({ pId }).value();
-  console.log(value);
-  res.json({
-    status: 200,
-    message: "Thêm bình luận thành công!",
-    data: dataComment
+router.post("/home/recipes/comment", async (req, res) => {
+  const { rId, comment, userId } = req.body;
+  const currentUser = await User.findOne({ userId });
+  console.log("currentUser", currentUser);
+  if (!currentUser) {
+    res.statusCode = 406;
+    res.json({
+      status: 406,
+      message: "userId Không hợp lệ!",
+    });
+    return;
+  }
+  const CurrentRecipe = await Home.find({ rId });
+  if (!CurrentRecipe) {
+    res.statusCode = 406;
+    res.json({
+      status: 406,
+      message: "rId Không hợp lệ!",
+    });
+    return;
+  }
+  const { avatar, userName } = currentUser;
+  const data = {
+    avatar,
+    comment,
+    name: userName,
+    userId,
+    rId,
+    cmtId: shortid.generate()
+  }
+  var commentModel = new Comment(data);
+  commentModel.save(async err => {
+    if (err) {
+      res.statusCode = 406;
+      res.json({
+        status: 406,
+        message: err
+      });
+      return;
+    }
+    const dataComment = await Comment.find({ rId });
+    res.json({
+      status: 200,
+      message: "Thêm bình luận thành công!",
+      dataComment: dataComment
+    });
   });
 });
 
+//api xoá bình luận.
+router.post("/home/recipes/comment/delete", async (req, res) => {
+  const { cmtId } = req.body;
+  const response = await Comment.findOneAndRemove({ cmtId });
+  if (!response) {
+    res.statusCode = 406;
+    res.json({
+      status: 406,
+      message: 'cmtId không tồn tại!',
+    })
+    return;
+  }
+  res.json({
+    status: 200,
+    message: 'Xoá bình luận thành công!',
+  });
+});
+
+
 //api like mon an
-router.post("/home/recipes/like", (req, res) => {
-  const { pId, userId } = req.body;
-  const recipe = db.get("recipes").find({ pId }).value();
+router.post("/home/recipes/like", async (req, res) => {
+  const { rId, userId } = req.body;
+  const recipe = await Home.findOne({ rId });
   const { like, usersLike = [] } = recipe;
   const index = usersLike.indexOf(userId);
   if (index >= 0) {
     usersLike.splice(index, 1);
-    db.get("recipes")
-      .find({ pId })
-      .assign({ like: like - 1, usersLike })
-      .write();
+    const response = await Home.where({ rId }).update({ like: like - 1, usersLike })
+    console.log("response", response);
     res.json({
       status: 200,
       message: "Unlike post thành công!"
     });
     return;
   }
-  db.get("recipes")
-    .find({ pId })
-    .assign({ like: like + 1, usersLike: [...usersLike, userId] })
-    .write();
+  const response = await Home.where({ rId }).update({ like: like + 1, usersLike: [...usersLike, userId] })
+  console.log("response", response);
+
   res.json({
     status: 200,
     message: "like post thành công!"

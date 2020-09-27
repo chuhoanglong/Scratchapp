@@ -7,6 +7,15 @@ const routerProducts = require("./Products.Router");
 const routerUsers = require("./Users.Router");
 const routerCustomer = require("./Customer.Router");
 const routerHomeScratch = require("./Scratch/Home.Router");
+const mongoose = require('mongoose');
+const url = 'mongodb+srv://hoanglong:31051998Long@cluster0.ybhuh.mongodb.net/ScratchDB'
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
+const dbMongo = mongoose.connection;
+dbMongo.on('error', console.error.bind(console, 'connection error:'));
+dbMongo.once('open', function () {
+  // we're connected!
+  console.log('connect success!');
+});
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
