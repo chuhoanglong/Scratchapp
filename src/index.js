@@ -12,7 +12,7 @@ const url = 'mongodb+srv://hoanglong:31051998Long@cluster0.ybhuh.mongodb.net/Scr
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 const dbMongo = mongoose.connection;
 dbMongo.on('error', console.error.bind(console, 'connection error:'));
-dbMongo.once('open', function () { 
+dbMongo.once('open', function () {
   // we're connected!
   console.log('connect success!');
 });
