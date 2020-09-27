@@ -8,10 +8,11 @@ const routerUsers = require("./Users.Router");
 const routerCustomer = require("./Customer.Router");
 const routerHomeScratch = require("./Scratch/Home.Router");
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/ScractchDB', { useNewUrlParser: true, useUnifiedTopology: true });
+const url = 'mongodb+srv://hoanglong:31051998Long@cluster0.ybhuh.mongodb.net/ScratchDB'
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 const dbMongo = mongoose.connection;
 dbMongo.on('error', console.error.bind(console, 'connection error:'));
-dbMongo.once('open', function() {
+dbMongo.once('open', function () {
   // we're connected!
   console.log('connect success!');
 });
